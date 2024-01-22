@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools>=64.0.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "Game_of_Life-Louis_Bessard-CDOF1"
+dynamic = ["version"]
+description = "Conway's Game of Life in your terminal"
+readme = "README.md"
+authors = ["LouSarbe"]
+dependencies = [
+    'tomli; python_version = "3.12"',
+]
+
+[project.scripts]
+Game_of_Life = "game.__main__:main"
+
+[tool.setuptools.dynamic]
+version = {attr = "Game_of_Life.__version__"}
