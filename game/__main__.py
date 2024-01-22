@@ -1,7 +1,7 @@
 import sys
 
 from game import patterns, views
-
+from game.cli import get_command_line_args
 
 def main():
     args = get_command_line_args()

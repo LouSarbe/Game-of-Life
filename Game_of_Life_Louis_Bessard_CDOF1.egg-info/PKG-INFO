@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: Game_of_Life-Louis_Bessard-CDOF1
+Version: 1.0.0
+Summary: Conway's Game of Life in your terminal
+Author-email: LouSarbe <louis.bessard@edu.devinci.fr>
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: tomli
+
+# Game-of-Life
+Open-source project made based of the famous game by mathematician John Horton Conway.

@@ -7,13 +7,13 @@ name = "Game_of_Life-Louis_Bessard-CDOF1"
 dynamic = ["version"]
 description = "Conway's Game of Life in your terminal"
 readme = "README.md"
-authors = ["LouSarbe"]
+authors = [{name = "LouSarbe", email = "louis.bessard@edu.devinci.fr"}]
 dependencies = [
-    'tomli; python_version = "3.12"',
+    "tomli"
 ]
 
 [project.scripts]
-Game_of_Life = "game.__main__:main"
+game = "game.__main__:main"
 
 [tool.setuptools.dynamic]
-version = {attr = "Game_of_Life.__version__"}
+version = {attr = "game.__version__"}

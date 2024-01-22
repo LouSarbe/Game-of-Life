@@ -15,7 +15,7 @@ def get_command_line_args():
         "-p",
         "--pattern",
         choices=[pat.name for pat in patterns.get_all_patterns()],
-        default="Blinker",
+        default="Pulsar",
         help="take a pattern for the Game of Life (default: %(default)s)",
     )
     parser.add_argument(
@@ -36,7 +36,7 @@ def get_command_line_args():
         "--gen",
         metavar="NUM_GENERATIONS",
         type=int,
-        default=10,
+        default=200,
         help="number of generations (default: %(default)s)",
     )
     parser.add_argument(

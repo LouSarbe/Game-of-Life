@@ -1,0 +1,15 @@
+LICENSE
+README.md
+pyproject.toml
+Game_of_Life_Louis_Bessard_CDOF1.egg-info/PKG-INFO
+Game_of_Life_Louis_Bessard_CDOF1.egg-info/SOURCES.txt
+Game_of_Life_Louis_Bessard_CDOF1.egg-info/dependency_links.txt
+Game_of_Life_Louis_Bessard_CDOF1.egg-info/entry_points.txt
+Game_of_Life_Louis_Bessard_CDOF1.egg-info/requires.txt
+Game_of_Life_Louis_Bessard_CDOF1.egg-info/top_level.txt
+game/__init__.py
+game/__main__.py
+game/cli.py
+game/grid.py
+game/patterns.py
+game/views.py
