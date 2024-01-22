@@ -20,7 +20,7 @@ The game works and we can launch different patterns changing the default argumen
 
 We could have a menu where we can choose the pattern we would like to launch. 
 
-We could implement a never ending package with a stop button.
+We could implement a never ending pattern with a stop button.
 
 We could implement a pattern creator.
 
