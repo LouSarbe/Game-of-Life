@@ -6,6 +6,7 @@ from pathlib import Path
 import tomllib
 import curses
 from time import sleep
+import random
 
 __version__ = "1.0.0"
 
@@ -50,10 +51,23 @@ class Pattern:
 
     @classmethod
     def from_toml(cls, name, toml_data):
-        return cls(
-            name,
-            alive_cells={tuple(cell) for cell in toml_data["alive_cells"]},
-        )
+        if name != "Random":
+            return cls(
+                name,
+                alive_cells={tuple(cell) for cell in toml_data["alive_cells"]},
+            )
+        else:
+            rows = toml_data.get("rows", 10)
+            cols = toml_data.get("cols", 10)
+            density = toml_data.get("density", 0.3)
+
+            alive_cells = set()
+            for row in range(rows):
+                for col in range(cols):
+                    if random.random() < density:
+                        alive_cells.add((row, col))
+
+            return cls(name, alive_cells)
 
 
 def get_pattern(name, filename=PATTERNS_FILE):
