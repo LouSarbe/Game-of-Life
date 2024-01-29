@@ -140,3 +140,6 @@ alive_cells = [
     [13, 11],
     [13, 13]
 ]
+
+["Random"]
+alive_cells = []
