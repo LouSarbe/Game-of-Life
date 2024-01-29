@@ -143,7 +143,7 @@ def get_command_line_args():
         "-p",
         "--pattern",
         choices=[pat.name for pat in get_all_patterns()],
-        default="Pulsar",
+        default="Random",
         help="take a pattern for the Game of Life (default: %(default)s)",
     )
     parser.add_argument(
