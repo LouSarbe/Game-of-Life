@@ -1,2 +1,0 @@
-[console_scripts]
-game = game.__main__:main
