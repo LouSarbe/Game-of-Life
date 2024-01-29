@@ -4,13 +4,7 @@ Open-source project made based of the famous game by mathematician John Horton C
 
 # Build
 
-Download the project and build it using these commands :
-
-$ python -m venv venv
-
-$ source venv/bin/activate
-
-(venv) $ python -m pip install -e .
+Download the project and run app.py on your python environment !
 
 # State
 
